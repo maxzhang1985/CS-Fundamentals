@@ -18,7 +18,24 @@ function twoSum(numbers, target) {
   console.log("No two sum solution");
 }
 
+function bsearch(list, key, startPt) {
+  var left = startPt;
+  var right = list.length - 1;
+  while (left < right) {
+    var mid = (left + right) / 2;
+    if (list[mid] < key) {
+      left = mid + 1;
+    } else {
+      right = mid;
+    }
 
+    if (left == right && list[left] == key) {
+      return left
+    } else {
+      return -1
+    }
+  }
+}
 
 // Test Case
 numbers = [2,4,11,15]
