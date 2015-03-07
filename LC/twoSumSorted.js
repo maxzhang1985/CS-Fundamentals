@@ -12,6 +12,7 @@ function twoSum(numbers, target) {
   for (var first = 0; first < numbers.length; first++) {
     var second = bsearch(numbers, target - numbers[first], first + 1);
     if (second != -1) {
+      console.log(numbers[first] + "+" + numbers[second] + "=" + target);
       return [first + 1, second + 1];
     }
   }
@@ -19,8 +20,8 @@ function twoSum(numbers, target) {
 }
 
 function bsearch(list, key, startPt) {
-  var left = startPt;
-  var right = list.length - 1;
+  var left = startPt;           //0
+  var right = list.length - 1;  //3
   while (left < right) {
     var mid = (left + right) / 2;
     if (list[mid] < key) {
