@@ -9,8 +9,16 @@
 
 // #1: Binary Search, Time: O(nlogn), Space: O(1)
 function twoSum(numbers, target) {
-
+  for (var first = 0; first < numbers.length; first++) {
+    var second = bsearch(numbers, target - numbers[first], first + 1);
+    if (second != -1) {
+      return [first + 1, second + 1];
+    }
+  }
+  console.log("No two sum solution");
 }
+
+
 
 // Test Case
 numbers = [2,4,11,15]
