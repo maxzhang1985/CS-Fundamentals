@@ -28,12 +28,11 @@ function bsearch(list, key, startPt) {
     } else {
       right = mid;
     }
-
-    if (left == right && list[left] == key) {
-      return left
-    } else {
-      return -1
-    }
+  }
+  if (left == right && list[left] == key) {
+    return left
+  } else {
+    return -1
   }
 }
 
