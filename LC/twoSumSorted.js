@@ -43,6 +43,6 @@ console.log(twoSum(numbers,target))
 
 console.log("---")
 
-numbers = [3,15,37,22]
+numbers = [3,15,22,37]
 target = 100
 console.log(twoSum(numbers,target))
