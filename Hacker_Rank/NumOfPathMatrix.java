@@ -29,3 +29,52 @@
 
 // Explanation #2:
 // You can move only right from the top-left cell: (0,0) to (0,1). After that, your only move is to (1,1). Hence only 1 path.
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class NoOfPathsInMatrix {
+
+    int m,n;
+    int arr[][]=null;
+
+    public static void main(String[] args)throws IOException {
+
+        NoOfPathsInMatrix obj=new NoOfPathsInMatrix();
+
+        BufferedReader br =new BufferedReader(new InputStreamReader((System.in)));
+
+        System.out.println("Enter the no of rows in matrix : ");
+        obj.m = Integer.parseInt(br.readLine());
+        System.out.println("Enter the no of cols in matrix : ");
+        obj.n = Integer.parseInt(br.readLine());
+
+        obj.arr = new int[obj.m][obj.n];
+        for(int i=0; i< obj.m;i++)
+        {
+            System.out.println("Enter "+(i+1)+"th row : ");
+            for(int j=0;j<obj.n;j++)
+            {
+                String s = br.readLine();
+                obj.arr[i][j] = Integer.parseInt(s);
+            }
+        }
+
+        System.out.println("No of paths : "+obj.noOfPaths(obj.arr,0,0));
+    }
+
+    int noOfPaths(int a[][], int i,int j)
+    {
+        if(i==m-1 && j==n-1)
+            return a[i][j];
+        else if (i==m-1)
+            return a[i][j+1];
+        else if (j==n-1)
+            return a[i+1][j];
+        else if(a[i][j]==1)
+            return noOfPaths(a,i+1,j) + noOfPaths(a,i,j+1);
+        else
+            return 0;
+    }
+}
