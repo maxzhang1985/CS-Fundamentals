@@ -1,3 +1,3 @@
 # Introduction
 
-A repo to practice data structures & algorithms in Ruby
+A repo to practice data structures & algorithms in Ruby and JavaScript
