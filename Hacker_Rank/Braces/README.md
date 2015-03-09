@@ -6,7 +6,7 @@ Your task is to write a function that checks whether the braces in each string a
 
 Note that your function will receive the following arguments:
 
-expressions which is an array of strings containing braces
+* expressions which is an array of strings containing braces
 
 ### Data constraints:
 
