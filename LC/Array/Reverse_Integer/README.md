@@ -5,8 +5,7 @@ Reverse digits of an integer.
 Example1: `x = 123`, `return 321`
 Example2: `x = -123`, `return -321`
 
-
-Have you thought about this?
+### Have you thought about this?
 
 Here are some good questions to ask before coding. Bonus points for you if you have already thought through this!
 
