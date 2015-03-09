@@ -31,8 +31,7 @@ Note that your function will receive the following arguments:
 
 | Input | Output  |
 | ----- | ------  |
-| firstWords: "cinema", "host", "aba", "train"
-| secondWords: "iceman", "shot", "bab", "rain"| 1 |
-||1|
-||0|
-||0|
+| firstWords: "cinema", "host", "aba", "train" | 1 |
+| secondWords: "iceman", "shot", "bab", "rain" | 1 |
+| | 0 |
+| | 0 |
