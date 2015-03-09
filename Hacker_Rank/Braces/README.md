@@ -20,4 +20,4 @@ your function is expected to print the result in less than 2 seconds
 ### Example:
 | Input | Output  |
 | ----- | ------  |
-| expressions: ```ruby[ "\)\(\)\{\}", "\[\]\(\{\}\)", "\(\[\]\)", "\{\(\)\[\]\}", "\(\[\)\]" ]```  | ```[0,1,1,1,0]``` |
+| expressions: ```[ "\)\(\)\{\}", "\[\]\(\{\}\)", "\(\[\]\)", "\{\(\)\[\]\}", "\(\[\)\]" ]```  | ```[0,1,1,1,0]``` |
