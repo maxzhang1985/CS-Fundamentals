@@ -17,6 +17,13 @@ function isPalindrome(input_string) {
 //   }
 
 // ----- O(n) runtime, O(1) sapce -----
+  var words = input_string.toLowerCase().replace(/[^a-zA-Z]/g, '');
+  var left = 0;
+  var right = words.length - 1;
+
+  while (left < right) {
+    // do sth
+  }
 
 }
 
