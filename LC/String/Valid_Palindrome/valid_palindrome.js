@@ -31,6 +31,6 @@ function isPalindrome(input_string) {
 }
 
 // Test Case
-console.log(isPalindrome("A man, a plan, a canal: Panama") === true);
-console.log(isPalindrome("race a car") === false);
-console.log(isPalindrome("") === true);
+console.log(isPalindrome("A man, a plan, a canal: Panama") === true); // true
+console.log(isPalindrome("race a car") === false); // true
+console.log(isPalindrome("") === true); // true
