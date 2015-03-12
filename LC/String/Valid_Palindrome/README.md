@@ -15,3 +15,4 @@ For example,
 Q: Have you consider that the string might be empty? This is a good question to ask during an interview.
 
 A: For the purpose of this problem, we define empty string as valid palindrome.
+

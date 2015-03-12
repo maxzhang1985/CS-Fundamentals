@@ -1,6 +1,5 @@
 function isPalindrome(input_string) {
 // ----- O(n) runtime, O(n) space -----
-
 //   if (input_string.length === 0) {
 //     return true;
 //   } else {
