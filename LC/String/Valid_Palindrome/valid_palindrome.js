@@ -2,9 +2,16 @@ function isPalindrome(input_string) {
   if (input_string.length === 0) {
     return true;
   } else {
-    for (var i = 0; i < input_string.length; i++) {
-      // do sth
+    var words = input_string.toLowerCase().replace(/[^a-zA-Z]/g,'');
+    var palindrome = "";
+    for (var i = 0; i < words.length; i++) {
+      palindrome += words[i];
     };
+    if (words === palindrome) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }
