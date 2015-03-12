@@ -20,8 +20,9 @@ function isPalindrome(input_string) {
   var words = input_string.toLowerCase().replace(/[^a-zA-Z]/g, '');
   var left = 0;
   var right = words.length - 1;
+  // Move two pointers towards each other until they meet
   while (left < right) {
-    if () {
+    if (words[left] !== words[right]) {
       return false;
     };
     left++;
