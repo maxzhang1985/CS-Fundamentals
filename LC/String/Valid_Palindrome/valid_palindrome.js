@@ -1,3 +1,4 @@
+// O(n) runtime, O(1) space
 function isPalindrome(input_string) {
   if (input_string.length === 0) {
     return true;
@@ -13,7 +14,6 @@ function isPalindrome(input_string) {
       return false;
     }
   }
-
 }
 
 // Test Case
