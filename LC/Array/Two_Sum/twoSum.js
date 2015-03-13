@@ -20,8 +20,10 @@ numbers = [2,4,11,15]
 target = 19
 console.log(twoSum(numbers,target))
 
-console.log("---")
-
 numbers = [3,15,37,22]
+target = 37
+console.log(twoSum(numbers,target))
+
+numbers = [3,24,53,4]
 target = 100
 console.log(twoSum(numbers,target))
