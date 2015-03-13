@@ -9,6 +9,15 @@ function reverseStr(str) {
   return reversedStr.join(" ");
 }
 
+// Reverse a single word
+function reverseAstr(str) {
+  if (str === '') {
+    return "Empty string";
+  } else {
+    return reverseAstr(str.substr(1)) + str.charAt(0);
+  }
+}
+
 
 // Test Case
 s1 = 'the sky is blue'
