@@ -10,6 +10,9 @@ function reverseStr(str) {
 
 
 // Test Case
-s = 'the sky is blue'
-console.log(reverseStr(s) === 'blue is sky the' ); // true
+s1 = 'the sky is blue'
+console.log(reverseStr(s1) === 'blue is sky the' ); // true
+
+s2 = 'what a   wonderful   day '
+console.log(reverseStr(s2));
 
