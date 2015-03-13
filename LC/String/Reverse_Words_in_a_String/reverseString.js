@@ -1,5 +1,8 @@
 function reverseStr(str) {
-  list = str.split(" ");
+  // Remove all leading, trailing and miltiple whitespaces
+  str = str.replace(/ +(?= )/g,'').trim();
+  list = str.split(' ');
+  console.log(list);
   var reversedStr = [];
   for (var i = list.length - 1; i >= 0; i--) {
     reversedStr.push(list[i]);
