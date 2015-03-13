@@ -9,10 +9,11 @@ function reverseStr(str) {
   return reversedStr.join(" ");
 }
 
-// Reverse a single word
+// Reverse a single word using Recursion
 function reverseAstr(str) {
-  if (str === '') {
-    return "Empty string";
+  if (str === "") {
+    // Handle the last char
+    return "";
   } else {
     return reverseAstr(str.substr(1)) + str.charAt(0);
   }
@@ -25,4 +26,7 @@ console.log(reverseStr(s1) === 'blue is sky the'); // true
 
 s2 = 'what a   wonderful   day '
 console.log(reverseStr(s2) === 'day wonderful a what'); // true
+
+s3 = 'string'
+console.log(reverseAstr(s3) === 'gnirts') // true
 
