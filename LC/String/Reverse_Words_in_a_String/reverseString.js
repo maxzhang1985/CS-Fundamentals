@@ -1,21 +1,18 @@
 function reverseStr(str) {
   // Remove all leading, trailing and miltiple whitespaces
-  str = str.replace(/ +(?= )/g,'').trim();
-  list = str.split(' ');
-  console.log(list);
+  var words = str.replace(/ +(?= )/g,'').trim().split(' ');
   var reversedStr = [];
-  for (var i = list.length - 1; i >= 0; i--) {
-    reversedStr.push(list[i]);
+  for (var i = words.length - 1; i >= 0; i--) {
+    reversedStr.push(words[i]);
   }
-  result = reversedStr.join(" ");
-  return result;
+  return reversedStr.join(" ");
 }
 
 
 // Test Case
 s1 = 'the sky is blue'
-console.log(reverseStr(s1) === 'blue is sky the' ); // true
+console.log(reverseStr(s1) === 'blue is sky the'); // true
 
 s2 = 'what a   wonderful   day '
-console.log(reverseStr(s2));
+console.log(reverseStr(s2) === 'day wonderful a what'); // true
 
