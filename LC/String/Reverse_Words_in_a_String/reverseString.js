@@ -18,6 +18,14 @@ function reverseAstr(str) {
     return reverseAstr(str.substr(1)) + str.charAt(0);
   }
 }
+// Reverse a single word using iteration
+function stringReverser(str) {
+  var reverse = '';
+  for (var i = str.length - 1; i >= 0; i--) {
+    reverse += str[i];
+  }
+  return reverse;
+}
 
 
 // Test Case
