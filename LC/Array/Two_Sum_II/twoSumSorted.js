@@ -30,7 +30,19 @@
 
 // #2: Two Pointers, Runtime: O(n), Space: O(1)
 function twoSum(numbers, target) {
-  // do sth
+  var i = 0;
+  var j = numbers.length - 1;
+  while (i < j) {
+    var sum = numbers[i] + numbers[j];
+    if (sum < target) {
+      i++;
+    } else if (sum > target) {
+      j--;
+    } else {
+      return [i, j];
+    }
+  }
+  return "No two sum solution";
 }
 
 
