@@ -1,3 +1,4 @@
+// Runtime: O(n), Space: O(n)
 function reverseStr(str) {
   // Remove all leading, trailing and miltiple whitespaces
   var words = str.replace(/ +(?= )/g,'').trim().split(' ');
