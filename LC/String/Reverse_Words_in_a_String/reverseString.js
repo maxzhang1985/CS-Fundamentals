@@ -1,12 +1,11 @@
 function reverseStr(str) {
-  reversedList = [];
-  for (var i = 0; i < str.length; i++) {
-    if (str[i] === " ") {
-      reversedList.push(str.substr(0, i - 1));
-    }
+  list = str.split(" ");
+  var reversedStr = [];
+  for (var i = list.length - 1; i >= 0; i--) {
+    reversedStr.push(list[i]);
   }
-  console.log(reversedList);
-  return reversedList;
+  result = reversedStr.join(" ");
+  return result;
 }
 
 
