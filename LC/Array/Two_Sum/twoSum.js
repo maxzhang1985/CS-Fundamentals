@@ -3,7 +3,7 @@ function twoSum(numbers, target) {
   for (var first = 0; first < numbers.length; first++) {
     for (var second = 0; second < numbers.length; second++ ) {
       if (numbers[first] + numbers[second] == target) {
-        return [first, second];
+        return [first + 1, second + 1];
       }
     }
   }
