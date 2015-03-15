@@ -39,7 +39,7 @@ function twoSum(numbers, target) {
     } else if (sum > target) {
       j--;
     } else {
-      return [i, j];
+      return [i + 1, j + 1];
     }
   }
   return "No two sum solution";
