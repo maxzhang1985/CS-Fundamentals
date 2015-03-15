@@ -50,11 +50,11 @@ function twoSum(numbers, target) {
 // Test Case
 numbers = [2,4,11,15]
 target = 19
-console.log(twoSum(numbers,target)[0] === 1 && twoSum(numbers,target)[1] === 3); // true
+console.log(twoSum(numbers,target)[0] === 2 && twoSum(numbers,target)[1] === 4); // true
 
-numbers = [3,15,22,37]
-target = 59
-console.log(twoSum(numbers,target)[0] === 2 && twoSum(numbers,target)[1] === 3); // true
+numbers = [3,15,22,37,48]
+target = 70
+console.log(twoSum(numbers,target)[0] === 3 && twoSum(numbers,target)[1] === 5); // true
 
 numbers = [3,4,24,53]
 target = 100
