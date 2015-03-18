@@ -23,7 +23,7 @@ function removeDuplicates (array) {
   var i = 0;
   var j = 1;
   while (i < len && j < len) {
-    if (array([i] == array[j])) {
+    if (array[i] == array[j]) {
       j++;
     } else {
       i++;
@@ -36,7 +36,7 @@ function removeDuplicates (array) {
 
 // Test Case
 A = [1,1,2]
-console.log(removeDuplicates(A) === 2);
+console.log(removeDuplicates(A)); // 2
 
 B = [3,5,4,6,78,3,6,78,5]
-console.log(removeDuplicates(B) === 5);
+console.log(removeDuplicates(B)); // 5
