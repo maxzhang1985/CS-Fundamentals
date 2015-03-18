@@ -23,9 +23,9 @@ function removeDuplicates (array) {
 
   var i = 0;
   var j = 1;
-  while (i < len && j < len) {    // If duplicate exists
-    if (array[i] == array[j]) {   // j continues to find the next different number
-      j++;
+  while (i < len && j < len) {
+    if (array[i] == array[j]) {   // if duplicate exists
+      j++;                        // j continues to find the next different number
     } else {
       i++;                        // i becomes the duplicated number that will be replaced
       array[i] = array[j];        // replace the non-duplicated j with the duplicated i
