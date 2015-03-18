@@ -15,16 +15,23 @@ function removeDuplicates (array) {
 
 // ========================================================
   // Runtime: O(n); Space: O(1)
-  var n = array.length;
-  if (n < 2) {
-    return n;
+  var len = array.length;
+  if (len < 2) {
+    return len;
   }
 
   var i = 0;
   var j = 1;
-
-
-
+  while (i < len && j < len) {
+    if (array([i] == array[j])) {
+      j++;
+    } else {
+      i++;
+      array[i] = array[j];
+      j++;
+    }
+  }
+  return i + 1;
 }
 
 // Test Case
