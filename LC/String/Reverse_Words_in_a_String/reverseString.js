@@ -8,7 +8,7 @@ function reverseStr(str) {
   }
   return reversedStr.join(" ");
 }
-
+//------------------------------------------------------------------------------
 // Reverse a single word using Recursion
 function reverseAstr(str) {
   if (str === "") {
@@ -26,7 +26,7 @@ function stringReverser(str) {
   }
   return reverse;
 }
-
+//------------------------------------------------------------------------------
 
 // Test Case
 s1 = 'the sky is blue'
