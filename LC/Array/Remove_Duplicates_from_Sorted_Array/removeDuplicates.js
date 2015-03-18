@@ -7,16 +7,16 @@ function removeDuplicates (array) {
       list.splice(array[i], 0, array[i]);
     } else {
       // Remove from array if pair exists
-      array.splice(array[i]), 1);
+      list.splice(list.indexOf(array[i]), 1);
+      array.splice(i, 1);
     }
   }
-  array.splice(array.indexOf(list[0]), 1);
   return array;
 }
 
 // Test Case
 A = [1,1,2]
-console.log(removeDuplicates(A));
+console.log("Ans:" + "[" + removeDuplicates(A) + "]"); // [1,2]
 
 B = [3,5,4,6,78,3,6,78,5]
-console.log(removeDuplicates(B));
+console.log("Ans:" + "[" + removeDuplicates(B) + "]"); // [4]
