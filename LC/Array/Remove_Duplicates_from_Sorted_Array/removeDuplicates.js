@@ -17,3 +17,6 @@ function removeDuplicates (array) {
 // Test Case
 A = [1,1,2]
 console.log(removeDuplicates(A) === 2);
+
+B = [3,5,4,6,78,3,6,78,5]
+console.log(removeDuplicates(B) === 4);
