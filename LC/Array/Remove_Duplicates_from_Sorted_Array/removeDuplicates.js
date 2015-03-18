@@ -1,4 +1,5 @@
 function removeDuplicates (array) {
+  // Runtime: O(n); Space: O(n)
   var list = [];
   for (var i = 0; i < array.length; i++) {
     // Check if specific value exists in list
@@ -11,8 +12,6 @@ function removeDuplicates (array) {
   }
   return list[0];
 }
-
-
 
 // Test Case
 A = [1,1,2]
