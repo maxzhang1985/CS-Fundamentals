@@ -11,12 +11,12 @@ function removeDuplicates (array) {
     }
   }
   array.splice(array.indexOf(list[0]), 1);
-  return array.length;
+  return array;
 }
 
 // Test Case
 A = [1,1,2]
-console.log(removeDuplicates(A) === 2);
+console.log(removeDuplicates(A));
 
 B = [3,5,4,6,78,3,6,78,5]
-console.log(removeDuplicates(B) === 8);
+console.log(removeDuplicates(B));
