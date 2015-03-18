@@ -14,7 +14,15 @@ function removeDuplicates (array) {
   // return array.length;
 
 // ========================================================
-// Runtime: O(n); Space: O(1)
+  // Runtime: O(n); Space: O(1)
+  var n = array.length;
+  if (n < 2) {
+    return n;
+  }
+
+  var i = 0;
+  var j = 1;
+
 
 
 }
