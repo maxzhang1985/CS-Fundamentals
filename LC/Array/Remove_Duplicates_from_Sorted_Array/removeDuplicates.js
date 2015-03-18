@@ -23,15 +23,16 @@ function removeDuplicates (array) {
 
   var i = 0;
   var j = 1;
-  while (i < len && j < len) {
-    if (array[i] == array[j]) {
+  while (i < len && j < len) {    // If duplicate exists
+    if (array[i] == array[j]) {   // j continues to find the next different number
       j++;
     } else {
-      i++;
-      array[i] = array[j];
-      j++;
+      i++;                        // i becomes the duplicated number that will be replaced
+      array[i] = array[j];        // replace the non-duplicated j with the duplicated i
+      j++;                        // update the next unchecked j
     }
   }
+  console.log(array);
   return i + 1;
 }
 
