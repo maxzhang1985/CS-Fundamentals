@@ -38,5 +38,5 @@ function removeDuplicates (array) {
 A = [1,1,2]
 console.log(removeDuplicates(A)); // 2
 
-B = [3,5,4,6,78,3,6,78,5]
-console.log(removeDuplicates(B)); // 5
+B = [3,3,5,5,5,7,7,14,35,46,46,79]
+console.log(removeDuplicates(B)); // 7
