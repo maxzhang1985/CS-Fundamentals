@@ -10,7 +10,8 @@ function removeDuplicates (array) {
       list.splice(list.indexOf(array[i]), 1);
     }
   }
-  return list[0];
+  array.splice(array.indexOf(list[0]), 1);
+  return array.length;
 }
 
 // Test Case
@@ -18,4 +19,4 @@ A = [1,1,2]
 console.log(removeDuplicates(A) === 2);
 
 B = [3,5,4,6,78,3,6,78,5]
-console.log(removeDuplicates(B) === 4);
+console.log(removeDuplicates(B) === 8);
