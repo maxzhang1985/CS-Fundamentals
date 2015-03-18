@@ -1,15 +1,12 @@
 function removeDuplicates (array) {
   var list = [];
   for (var i = 0; i < array.length; i++) {
-    // Check if array is not empty
-    if (!list[array[i]]) {
+    // Check if specific value exists in list
+    if (list.indexOf(array[i]) === -1) {
       list.splice(array[i], 0, array[i]);
-      console.log(list);
-      console.log(array[i]);
     } else {
-      list.splice(array[i], 1);
-      console.log(list);
-      console.log(array[i]);
+      // Remove from list if pair exists
+      list.splice(list.indexOf(array[i]), 1);
     }
   }
   return list;
