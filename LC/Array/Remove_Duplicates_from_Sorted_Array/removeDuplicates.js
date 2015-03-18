@@ -1,7 +1,7 @@
 function removeDuplicates (array) {
   // Runtime: O(n); Space: O(n)
   var list = [];
-  for (var i = array.length; i <= 0; i--) {
+  for (var i = array.length - 1; i >= 0; i--) {
     // Check if specific value exists in list
     if (list.indexOf(array[i]) === -1) {
       list.splice(array[i], 0, array[i]);
