@@ -9,11 +9,11 @@ function removeDuplicates (array) {
       list.splice(list.indexOf(array[i]), 1);
     }
   }
-  return list;
+  return list[0];
 }
 
 
 
 // Test Case
 A = [1,1,2]
-console.log(removeDuplicates(A));
+console.log(removeDuplicates(A) === 2);
