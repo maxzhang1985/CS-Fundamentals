@@ -32,13 +32,12 @@ function removeDuplicates (array) {
       j++;                        // update the next unchecked j
     }
   }
-  console.log(array);
   return i + 1;
 }
 
 // Test Case
 A = [1,1,2]
-console.log(removeDuplicates(A)); // 2
+console.log(removeDuplicates(A) === 2); // 2
 
 B = [3,3,3,5,5,7,7,7,7,9,9,9,9,9,11]
-console.log(removeDuplicates(B)); // 5
+console.log(removeDuplicates(B) === 5); // 5
