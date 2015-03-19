@@ -1,3 +1,4 @@
+// Node Class
 function Node(data, left, right) {
   this.data = data;
   this.left = left;
@@ -6,5 +7,6 @@ function Node(data, left, right) {
 }
 
 function show() {
-return this.data;
+  return this.data;
 }
+
