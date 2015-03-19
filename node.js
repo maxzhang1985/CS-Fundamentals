@@ -13,6 +13,17 @@ function show() {
 
 // Binary Search Tree class
 function BST() {
-  this.root = null;
-  this.
+  this.root = null; // creating an empty node
+  this.insert = insert;
+  this.inOrder = inOrder;
+}
+
+// Insert new node
+function insert(data) {
+  var n = new Node(data, null, null);
+  if (this.root == null) {
+    this.root = n;
+  } else {
+
+  }
 }
