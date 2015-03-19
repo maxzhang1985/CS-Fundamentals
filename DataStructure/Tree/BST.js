@@ -18,7 +18,7 @@ function BST() {
   this.inOrder = inOrder;
 }
 
-// Insert new node
+// Inserting new node
 function insert(data) {
   var n = new Node(data, null, null);
   if (this.root == null) {
