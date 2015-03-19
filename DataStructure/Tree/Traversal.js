@@ -1,6 +1,10 @@
 // In-order traversal (ascending order of node key values)
 function inOrder(node) {
-
+  if (!(node == null)) {
+    inOrder(node.left);
+    putstr(node.show() + " ");
+    inOrder(node.right);
+  }
 }
 
 
