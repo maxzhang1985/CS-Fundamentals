@@ -1,10 +1,13 @@
 // In-order traversal (ascending order of node key values)
+list = "";
+
 function inOrder(node) {
   if (!(node == null)) {
     inOrder(node.left);
-    putstr(node.show() + " ");
+    list = list.concat(node.show() + " ");
     inOrder(node.right);
   }
+  return list;
 }
 
 // Test Case for inOrder
@@ -16,7 +19,7 @@ nums.insert(37);
 nums.insert(3);
 nums.insert(99);
 nums.insert(22);
-print("Inorder traversal: ");
+console.log("Inorder traversal: ");
 inOrder(nums.root);
 
 // Pre-order traversal (root node 1st, then left to right)
