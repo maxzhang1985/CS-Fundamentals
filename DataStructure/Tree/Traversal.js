@@ -1,10 +1,10 @@
 // In-order traversal (ascending order of node key values)
-list = "";
+list = [];
 
 function inOrder(node) {
   if (!(node == null)) {
     inOrder(node.left);
-    list = list.concat(node.show() + " ");
+    list.push(node.show());
     inOrder(node.right);
   }
   return list;
@@ -24,7 +24,9 @@ inOrder(nums.root);
 
 // Pre-order traversal (root node 1st, then left to right)
 function preOrder(node) {
-  //sth
+  if (!(node == null)) {
+
+  }
 }
 
 // Post-order traversal (child nodes first, left to right)
