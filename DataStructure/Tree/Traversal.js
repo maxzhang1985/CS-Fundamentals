@@ -23,8 +23,16 @@ function preOrder(node) {
 }
 
 // Post-order traversal (child nodes first, left to right)
+
+var postOrderList = [];
+
 function postOrder(node) {
-  //sth
+  if (!(node == null)) {
+    postOrder(node.left);
+    postOrder(node.right);
+    postOrderList.push(node.show());
+  }
+  return postOrderList;
 }
 
 // Test Case for traversal
