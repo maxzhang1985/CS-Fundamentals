@@ -46,3 +46,4 @@ nums.insert(99);
 nums.insert(22);
 inOrder(nums.root);
 preOrder(nums.root);
+postOrder(nums.root);
