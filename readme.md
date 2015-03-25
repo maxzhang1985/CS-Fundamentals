@@ -1,3 +1,3 @@
 # Introduction
 
-A collection of data structures & algorithms practice in Ruby and JavaScript from online judge & past interviews
+A place for practicing data structures & algorithms using Ruby and JavaScript
