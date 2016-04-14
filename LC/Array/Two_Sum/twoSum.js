@@ -3,7 +3,7 @@ function twoSum(numbers, target) {
   for (var first = 0; first < numbers.length; first++) {
     for (var second = 0; second < numbers.length; second++ ) {
       if (numbers[first] + numbers[second] == target) {
-        return [first + 1, second + 1];
+        return [first, second];
       }
     }
   }
@@ -13,14 +13,32 @@ function twoSum(numbers, target) {
 }
 
 // Test Case
-numbers = [2,4,11,15]
-target = 19
-console.log(twoSum(numbers,target)[0] === 2 && twoSum(numbers,target)[1] === 4); // true
+var numbers = [2,4,11,15]
+var target = 19
+console.log('Input=> numbers: ' + numbers + ' | target: ' + target);
+console.log('Output=> index1 = ' + (twoSum(numbers, target)[0] + 1) + ', index2 = ' + (twoSum(numbers, target)[1] + 1));
+if (twoSum(numbers,target) != "No two sum solution") {
+  console.log(numbers[twoSum(numbers,target)[0]] + ' + ' + numbers[twoSum(numbers,target)[1]] + ' = ' + target + '\n'); //19
+} else {
+  console.log("No two sum solution");
+}
 
-numbers = [3,15,37,22,48]
-target = 85
-console.log(twoSum(numbers,target)[0] === 3 && twoSum(numbers,target)[1] === 5); // true
+var numbers = [3,15,37,22,48]
+var target = 85
+console.log('numbers: ' + numbers + ' | target: ' + target);
+console.log('Output=> index1 = ' + (twoSum(numbers, target)[0] + 1) + ', index2 = ' + (twoSum(numbers, target)[1] + 1));
+if (twoSum(numbers,target) != "No two sum solution") {
+  console.log(numbers[twoSum(numbers,target)[0]] + ' + ' + numbers[twoSum(numbers,target)[1]] + ' = ' + target + '\n'); //85
+} else {
+  console.log("No two sum solution");
+}
 
-numbers = [3,24,53,4]
-target = 100
-console.log(twoSum(numbers,target) === 'No two sum solution'); // true
+var numbers = [3,24,53,4]
+var target = 100
+console.log('numbers: ' + numbers + ' | target: ' + target);
+console.log('Output=> index1 = ' + (twoSum(numbers, target)[0] + 1) + ', index2 = ' + (twoSum(numbers, target)[1] + 1));
+if (twoSum(numbers,target) != "No two sum solution") {
+  console.log(numbers[twoSum(numbers,target)[0]] + ' + ' + numbers[twoSum(numbers,target)[1]] + ' = ' + target + '\n');
+} else {
+  console.log("No two sum solution");
+}
