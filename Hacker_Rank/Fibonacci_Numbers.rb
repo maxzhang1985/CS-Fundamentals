@@ -21,15 +21,15 @@
 ##### Output Format
 # One integer which is the N-th Fibonacci number.
 
-def fibonacci(nth_fib)
+def fibonacci(n)
   ### 1) Using Recursion - Time: O(2^n); Space: O(n)
 
-  # if nth_fib == 1
+  # if n == 1
   #   return 0
-  # elsif nth_fib == 2
+  # elsif n == 2
   #   return 1
-  # elsif nth_fib > 2
-  #   return fibonacci(nth_fib - 1) + fibonacci(nth_fib - 2)
+  # elsif n > 2
+  #   return fibonacci(n - 1) + fibonacci(n - 2)
   # else
   #   return "Please enter a positive number!"
   # end
@@ -37,24 +37,22 @@ def fibonacci(nth_fib)
 
   # 2) Using Iteration - Time: O(n); Space: O(n)
 
-  if nth_fib == 1
+  if n == 1
     return 0
-  elsif nth_fib == 2
+  elsif n == 2
     return 1
-  elsif nth_fib > 2
-
-    first_num = 0
-    second_num = 1
+  elsif n > 2
+    first_num = 1
+    second_num = 0
     i = 1
 
-    while i < nth_fib
-      fib_num = first_num + second_num
-      second_num = first_num
-      first_num = fib_num
+    while i < n
+      fib_num = second_num + first_num
+      first_num = second_num
+      second_num = fib_num
       i += 1
     end
-    return fib_num
-
+    return fib_num #return the n-1
   else
     return "Please enter a positive number!"
   end
@@ -62,7 +60,8 @@ end
 
 ##### Test Case
 puts fibonacci(2) == 1
-puts fibonacci(7) == 8
 puts fibonacci(10) == 34
-puts fibonacci(-1) == "Please enter a positive number!"
+puts fibonacci(40) == 63245986
+puts fibonacci(-1) == 'Please enter a positive number!'
+ # == "Please enter a positive number!"
 # puts fibonacci(50)
