@@ -1,3 +1,0 @@
-class FixedArray
-
-end
